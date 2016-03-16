@@ -1,0 +1,54 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.p-off {
+    padding: 0;
+}
+.full_height {
+    min-height: 100%;
+}
+.full_page {
+    width: 100%;
+    height: 100%;
+    background-color: #1D2426;
+    border: solid 3px #FF9900;
+}
+.form_auth {
+    min-height: 175px;
+    border: solid 1px rgba(0, 153, 255,.7);
+    border-top: solid 3px #FF9900;
+}
+.form_auth input {
+    height: 30px;
+    background: transparent;
+    border: solid 1px white;
+    transition: all .3s ease-in-out;
+}
+input[name=login] {
+
+}
+input[name=login]:focus {
+    border: solid 1px #0099FF;
+}
+input[name=login]:hover {
+    border: solid 1px rgba(0, 153, 255,.7);
+}
+input[name=password] {
+
+}
+input[name=password]:focus {
+    border: solid 1px #0099FF;
+}
+input[name=password]:hover {
+    border: solid 1px rgba(0, 153, 255,.7);
+}
+input[name=submit] {
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute System</title>
+    <link rel="stylesheet" href="css/wfg.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="con">
+        <div class="r">
+            <div class="hei lg-12 one wel">
+                <div class="auth_form row justify-center content-around">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                    <input type="submit" class="submit lg-10 b_reg" name="submit" value="Registration">
+                    <input type="submit" class="submit lg-10 b_log" name="submit" value="Login">
+                </div>
+            </div>
+            <div class="hei lg-12 two"></div>
+            <div class="hei lg-12 three log">
+                <div class="auth_form row justify-center content-around">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                    <form action="" class="log_form lg-12 row justify-center">
+                        <input type="text" class="username lg-11" name="username" placeholder="Username">
+                        <input type="password" class="password lg-11" name="password" placeholder="Password">
+                    </form>
+                    <input type="submit" class="submit lg-10 logen" name="submit" value="Login">
+                </div>
+            </div>
+            <div class="hei lg-12 four"></div>
+            <div class="hei lg-12 five reg">
+                <div class="auth_form row justify-center content-around">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                    <form action="" class="log_form lg-12 row justify-center">
+                        <input type="email" class="mail lg-11" name="Mail" placeholder="Mail">
+                        <input type="password" class="password lg-11" name="password" placeholder="Password">
+                    </form>
+                    <input type="submit" class="submit lg-10 rege" name="submit" value="Login">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.0.js" charset="utf-8"></script>
+    <script src="js/jquery.transform2d.js" charset="utf-8"></script>
+    <script src="js/common.js" charset="utf-8"></script>
+    <script>
+        $('.logen').click(function() {
+                $('.four').animate({
+                    'left':0
+                }, 1000);
+        });
+        $('.b_log').click(function() {
+            $('.three').animate({
+                'top':0
+            }, 1000);
+            setTimeout(function() {
+                $('.one').css('display','none');
+            }, 900);
+        });
+        $('.rege').click(function() {
+                $('.two').animate({
+                    'left':0
+                }, 1000);
+        });
+        $('.b_reg').click(function() {
+            $('.five').animate({
+                'top':0
+            }, 1000);
+            setTimeout(function() {
+                $('.one').css('display','none');
+            }, 900);
+        });
+
+    </script>
+</body>
+</html>
+<!-- <section id="auth">
+    <div class="container full">
+        <div class="row full justify-center items-center">
+            <div class="lg-3 log">
+                <div class="auth_form row justify-center content-around">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                    <form action="" class="log_form lg-12 row justify-center">
+                        <input type="text" class="username lg-11" name="username" placeholder="Username">
+                        <input type="password" class="password lg-11" name="password" placeholder="Password">
+                    </form>
+                    <input type="submit" class="submit lg-10" name="submit" value="Login">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section> -->

@@ -1,0 +1,166 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.preloader
+{
+    display: none;
+
+    width: 0;
+    height: 0;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: black;
+}
+.bor
+{
+    border: solid 1px black;
+}
+.full-width
+{
+    width: 100%;
+}
+.full-height
+{
+    height: 100%;
+}
+header
+{
+    height: 62px;
+
+    border-bottom: solid 1px black;
+}
+.header-height
+{
+    height: 32px;
+}
+.header-search
+{
+    height: 100%;
+
+    border: solid 1px black;
+    outline: none;
+    background: transparent;
+}
+.header-menu
+{
+    height: 100%;
+}
+.logo
+{
+    line-height: 32px;
+
+    text-align: center;
+}
+.menu li
+{
+    line-height: 32px;
+
+    height: 100%;
+
+    text-align: center;
+}
+.menu li a
+{
+    margin: 0;
+    padding: 0;
+}
+/***************************************************************************************************************/
+#slider
+{
+    width: 100%;
+
+    border-bottom: solid 1px black;
+}
+#slider .item img
+{
+    display: block;
+
+    width: 100%;
+}
+/***************************************************************************************************************/
+#most
+{
+    width: 100%;
+    margin-top: 1.7%;
+
+    border-bottom: solid 1px black;
+}
+.most-item
+{
+    height: 150px;
+
+    border-top: solid 1px black;
+}
+.most-item img
+{
+    width: 128px;
+    height: 128px;
+}
+.most-name
+{
+    height: 25px;
+}
+.most-detail
+{
+    height: 60px;
+}
+.most-nav
+{
+    height: 25px;
+}
+.most-nav button
+{
+    height: 25px;
+}
+.most-title
+{
+    font-size: 20pt;
+    line-height: 40px;
+
+    height: 50px;
+}
+#footer
+{
+    height: 100px;
+}
+#footer img
+{
+    width: 50px;
+    height: 50px;
+}
+#footer .container,
+#footer .row
+{
+    margin: 0;
+    padding: 0;
+}
+.footer-creator
+{
+    line-height: 25px;
+
+    height: 50px;
+
+    text-align: center;
+}
+.footer-links
+{
+    border-bottom: solid 1px black;
+}

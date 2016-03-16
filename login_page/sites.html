@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wfg.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="next min-height">
+        <div class="container full_width p_m">
+            <div class="row justify-center banner">
+                <div class="lg-12 md-12 sm-12 ex-12 row justify-center items-center big-logo">
+                    <a href="login.html"><img src="action_system.svg" width="186px" height="186px" alt="" /></a>
+                    <h1 class="lg-offset-1">Welcome to your system</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container full_height category full_width">
+            <div class="row justify-around items-center full_height">
+                <div onmouseenter="enter(this)" class="lg-3 md-5 sm-7 ex-12 row justify-center site">
+                    <div class="lg-12 md-12 sm-12 ex-12 this-page">
+                        <img src="page.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 row justify-around p_m control">
+                        <div onclick="click_hide(this)" class="lg-6 md-6 sm-6 ex-6 hide">Hide</div>
+                        <div class="lg-6 md-6 sm-6 ex-6 view"><a href="">View</a></div>
+                    </div>
+                    <div class="logo_site row items-center">
+                        <div class="lg-4 md-4 sm-4 ex-4 logo"><img src="action_system.svg" width="64px" height="64px" alt="" /></div>
+                        <div class="lg-8 md-8 sm-8 ex-8 name"><h3>Action system</h3></div>
+                    </div>
+                </div>
+                <div onmouseenter="enter(this)" class="lg-3 md-5 sm-7 ex-12 row justify-center site">
+                    <div class="lg-12 md-12 sm-12 ex-12 this-page">
+                        <img src="page.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 row justify-around p_m control">
+                        <div onclick="click_hide(this)" class="lg-6 md-6 sm-6 ex-6 hide">Hide</div>
+                        <div class="lg-6 md-6 sm-6 ex-6 view"><a href="">View</a></div>
+                    </div>
+                    <div class="logo_site row items-center">
+                        <div class="lg-4 md-4 sm-4 ex-4 logo"><img src="action_system.svg" width="64px" height="64px" alt="" /></div>
+                        <div class="lg-8 md-8 sm-8 ex-8 name"><h3>Action system</h3></div>
+                    </div>
+                </div>
+                <div onmouseenter="enter(this)" class="lg-3 md-5 sm-7 ex-12 row justify-center site">
+                    <div class="lg-12 md-12 sm-12 ex-12 this-page">
+                        <img src="page.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 row justify-around p_m control">
+                        <div onclick="click_hide(this)" class="lg-6 md-6 sm-6 ex-6 hide">Hide</div>
+                        <div class="lg-6 md-6 sm-6 ex-6 view"><a href="">View</a></div>
+                    </div>
+                    <div class="logo_site row items-center">
+                        <div class="lg-4 md-4 sm-4 ex-4 logo"><img src="action_system.svg" width="64px" height="64px" alt="" /></div>
+                        <div class="lg-8 md-8 sm-8 ex-8 name"><h3>Action system</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jquery-2.2.0.js" charset="utf-8"></script>
+<script src="jquery.transform2d.js" charset="utf-8"></script>
+<script src="jquery.animate-shadow.js" charset="utf-8"></script>
+<script type="text/javascript">
+    function enter(x) {
+        $(x).children('.control').animate({
+            height:"25px"
+        }, 250);
+    };
+    $('.site').mouseleave(function() {
+        $('.control').animate({
+            height:0
+        }, 250);
+    });
+    function click_hide(x) {
+        $(x).parent('.control').parent('.site').fadeOut(500);
+    };
+    $(document).ready(function() {
+        $('.banner').css("display","block");
+        $('.banner').animate({
+            "height":"186px"
+        }, 500);
+        setTimeout(function() {
+            $('.site').animate({
+                "opacity":1
+            }, 500);
+        }, 500);
+
+    });
+</script>
+</html>
