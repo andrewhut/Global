@@ -11,16 +11,40 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row justify-around items-center">
+            <div class="row justify-around items-center hero-menu">
                 <a href="">Новини</a>
                 <a href="">Каталог</a>
                 <a href="">Про сайт</a>
-                <a href="">Реєстрація</a>
+                <a href="log-reg.html">Вхід/Реєстрація</a>
             </div>
         </div>
     </header>
-    <div class="banner">
-        <img src="img/banner.jpg" alt="">
+
+    <div class="banner p_m">
+        <div class="container log-reg full-height">
+            <div class="row justify-end items-center full-height">
+                <ul class="lg-3 row tabs">
+                    <li class="lg-6 row justify-center items-center tab cur"><a href="#t-1">first</a></li>
+                    <li class="lg-6 row justify-center items-center tab"><a href="#t-2">second</a></li>
+                    <div id="t-1" class="lg-12 row justify-center items-center tabbb">
+                        <div class="lg-12 row inputs">
+                            <input class="lg-12" type="text" name="login" id="" placeholder="Login">
+                            <input class="lg-12" type="passwrod" name="password" id="" placeholder="Password">
+                        </div>
+
+                        <input class="lg-12" type="button" name="log" id="" value="Login">
+                    </div>
+                    <div id="t-2" class="lg-12 row justify-center items-center tabbb">
+                        <div class="lg-12 row inputs">
+                            <input class="lg-12" type="text" name="login" id="" placeholder="Login">
+                            <input class="lg-12" type="passwrod" name="password" id="" placeholder="Password">
+                            <input class="lg-12" type="passwrod" name="repassword" id="" placeholder="Re-Password">
+                        </div>
+                        <input class="lg-12" type="button" name="log" id="" value="Login">
+                    </div>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="new-5">
         <div class="container">
@@ -52,6 +76,82 @@
                     </div>
                     <img src="img/the_division.jpg" alt="">
                 </div>
+                <div class="lg-2 row short-game p_m">
+                    <div class="lg-12 control p_m">
+                        <div class="row justify-center items-center full-height">
+                            <div class="lg-6 view">
+                                <a href="">View</a>
+                            </div>
+                            <div class="lg-6 buy">
+                                <a href="">Buy</a>
+                            </div>
+                            <div class="lg-12 title">
+                                <h5>The Division</h5>
+                            </div>
+                            <div class="lg-12 price">
+                                <h4>500 uah</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/the_division.jpg" alt="">
+                </div>
+                <div class="lg-2 row short-game p_m">
+                    <div class="lg-12 control p_m">
+                        <div class="row justify-center items-center full-height">
+                            <div class="lg-6 view">
+                                <a href="">View</a>
+                            </div>
+                            <div class="lg-6 buy">
+                                <a href="">Buy</a>
+                            </div>
+                            <div class="lg-12 title">
+                                <h5>The Division</h5>
+                            </div>
+                            <div class="lg-12 price">
+                                <h4>500 uah</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/the_division.jpg" alt="">
+                </div>
+                <div class="lg-2 row short-game p_m">
+                    <div class="lg-12 control p_m">
+                        <div class="row justify-center items-center full-height">
+                            <div class="lg-6 view">
+                                <a href="">View</a>
+                            </div>
+                            <div class="lg-6 buy">
+                                <a href="">Buy</a>
+                            </div>
+                            <div class="lg-12 title">
+                                <h5>The Division</h5>
+                            </div>
+                            <div class="lg-12 price">
+                                <h4>500 uah</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/the_division.jpg" alt="">
+                </div>
+                <div class="lg-2 row short-game p_m">
+                    <div class="lg-12 control p_m">
+                        <div class="row justify-center items-center full-height">
+                            <div class="lg-6 view">
+                                <a href="">View</a>
+                            </div>
+                            <div class="lg-6 buy">
+                                <a href="">Buy</a>
+                            </div>
+                            <div class="lg-12 title">
+                                <h5>The Division</h5>
+                            </div>
+                            <div class="lg-12 price">
+                                <h4>500 uah</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/the_division.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -62,5 +162,25 @@
     <script src="js/jquery.transform2d.js" charset="utf-8"></script>
     <script src="js/jquery.animate-shadow.js" charset="utf-8"></script>
     <script src="js/common.js" charset="utf-8"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 1) {
+                $('header').css('background','rgb(255, 255, 255)');
+                $('header').css('border-bottom','solid 1px black');
+            }
+            else if ($(this).scrollTop() < 1) {
+                $('header').css('background','transparent');
+                $('header').css('border-bottom','none');
+            }
+    });
+    $('.row a').click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass('cur');
+        $(this).parent().siblings().removeClass('cur');
+        var tab = $(this).attr("href");
+        $(".tabbb").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+    </script>
 </body>
 </html>

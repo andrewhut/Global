@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog Page</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/wfg.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <style media="screen">
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="row justify-around">
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="home.html">New</a></li>
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="catalog.html">Catalog</a></li>
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="about.html">About us</a></li>
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="in-up.html">Sign In/Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="category">
+        <div class="container">
+            <div class="row justify-around">
+                <div class="lg-12 md-12 sm-12 ex-12 empty">
+                    Category
+                </div>
+                <div class="lg-3 cat">
+                    <div class="lg-12 md-12 sm-12 ex-12 title">
+                        <a href="">ACTIONS</a>
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 more">
+                        Rem, vel praesentium libero eaque recusandae nulla optio quibusdam asperiores. Porro praesentium facilis, doloribus accusantium temporibus et neque dolorem odio voluptate cumque.
+                    </div>
+                </div>
+                <div class="lg-3 cat">
+                    <div class="lg-12 md-12 sm-12 ex-12 title">
+                        <a href="">FANTASY</a>
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 more">
+                        Rem, vel praesentium libero eaque recusandae nulla optio quibusdam asperiores. Porro praesentium facilis, doloribus accusantium temporibus et neque dolorem odio voluptate cumque.
+                    </div>
+                </div>
+                <div class="lg-3 cat">
+                    <div class="lg-12 md-12 sm-12 ex-12 title">
+                        <a href="">RACING</a>
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 more">
+                        Rem, vel praesentium libero eaque recusandae nulla optio quibusdam asperiores. Porro praesentium facilis, doloribus accusantium temporibus et neque dolorem odio voluptate cumque.
+                    </div>
+                </div>
+                <div class="lg-3 cat">
+                    <div class="lg-12 md-12 sm-12 ex-12 title">
+                        <a href="">ARCADE</a>
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 more">
+                        Rem, vel praesentium libero eaque recusandae nulla optio quibusdam asperiores. Porro praesentium facilis, doloribus accusantium temporibus et neque dolorem odio voluptate cumque.
+                    </div>
+                </div>
+                <div class="lg-3 cat">
+                    <div class="lg-12 md-12 sm-12 ex-12 title">
+                        <a href="">SPORTS</a>
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 more">
+                        Rem, vel praesentium libero eaque recusandae nulla optio quibusdam asperiores. Porro praesentium facilis, doloribus accusantium temporibus et neque dolorem odio voluptate cumque.
+                    </div>
+                </div>
+                <div class="lg-3 cat">
+                    <div class="lg-12 md-12 sm-12 ex-12 title">
+                        <a href="">ONLINE</a>
+                    </div>
+                    <div class="lg-12 md-12 sm-12 ex-12 more">
+                        Rem, vel praesentium libero eaque recusandae nulla optio quibusdam asperiores. Porro praesentium facilis, doloribus accusantium temporibus et neque dolorem odio voluptate cumque.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="js/jquery-2.2.0.js" charset="utf-8"></script>
+    <script src="js/jquery.animate-shadow.js" charset="utf-8"></script>
+    <script src="js/jquery.transform2d.js" charset="utf-8"></script>
+    <script src="js/common.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 1) {
+                $('header').css('background','rgb(255, 255, 255)');
+                $('header').css('border-bottom','solid 1px black');
+            }
+            else if ($(this).scrollTop() < 1) {
+                $('header').css('background','transparent');
+                $('header').css('border-bottom','none');
+            }
+        });
+    </script>
+</body>
+</html>

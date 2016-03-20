@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="wfg.css">
+    <link rel="stylesheet" href="categories.css">
+    <style media="screen">
+
+    </style>
+</head>
+<body>
+    <div class="load-page">
+
+    </div>
+    <div class="container category">
+        <div class="row justify-around">
+            <div onmouseenter="enter(this)" class="lg-3 page">
+                <div class="row items-center full-height">
+                    <img src="action_system.svg" alt="" width="86px" height="86px" class="lg-5 page-logo">
+                    <h3 class="lg-7 page-title">Action system</h3>
+                </div>
+                <div class="row page-more">
+                    <a href="" class="lg-6 page-view">
+                        View
+                    </a>
+                    <a href="" class="lg-6 page-hide">
+                        Hide
+                    </a>
+                </div>
+            </div>
+            <div onmouseenter="enter(this)" class="lg-3 page">
+                <div class="row items-center full-height">
+                    <img src="action_system.svg" alt="" width="86px" height="86px" class="lg-5 page-logo">
+                    <h3 class="lg-7 page-title">Action system</h3>
+                </div>
+                <div class="row page-more">
+                    <a href="" class="lg-6 page-view">
+                        View
+                    </a>
+                    <a href="" class="lg-6 page-hide">
+                        Hide
+                    </a>
+                </div>
+            </div>
+            <div onmouseenter="enter(this)" class="lg-3 page">
+                <div class="row items-center full-height">
+                    <img src="action_system.svg" alt="" width="86px" height="86px" class="lg-5 page-logo">
+                    <h3 class="lg-7 page-title">Action system</h3>
+                </div>
+                <div class="row page-more">
+                    <a href="" class="lg-6 page-view">
+                        View
+                    </a>
+                    <a href="" class="lg-6 page-hide">
+                        Hide
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-2.2.0.js" charset="utf-8"></script>
+    <script src="jquery.transform2d.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('.load-page').animate({
+                    "height":"200px"
+                }, 500);
+            }, 500);
+        });
+        function enter(x) {
+            $(x).children('.page-more').animate({
+                "height":"25px"
+            }, 250);
+            setTimeout(function() {
+                $(x).children('.page-more').children().animate({
+                    "opacity":1
+                }, 250);
+            }, 500);
+        };
+        $('.page').mouseleave(function() {
+            $('.page-more').animate({
+                height: 0
+            }, 250);
+            $('.page-more').children().animate({
+                "opacity": 0
+            }, 250);
+        });
+        if ($('.page-more').css('height',0)) {
+            $('.page-more a').css('opacity',0);
+        }
+    </script>
+</body>
+</html>

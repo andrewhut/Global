@@ -1,0 +1,88 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  text-align: center;
+  list-style: none; }
+
+a {
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+  color: black; }
+
+div {
+  text-align: center;
+  text-decoration: none; }
+
+.full-height {
+  height: 100%; }
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid black; }
+  header a {
+    font-family: consolamono; }
+  header a:hover {
+    color: #e54861; }
+
+.category .empty {
+  height: 63px;
+  line-height: 175px;
+  font-family: gunplay;
+  font-size: 20pt; }
+.category .cat {
+  height: 50px;
+  margin: 75px 30px 75px 30px;
+  background-color: #e54861;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.25s ease-in-out; }
+  .category .cat .title {
+    height: 50px; }
+    .category .cat .title a {
+      font-family: consolamono;
+      color: #efd5b7; }
+  .category .cat:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1, 1.1); }
+  .category .cat .more {
+    overflow: hidden;
+    background-color: #26252c;
+    height: 0;
+    border-bottom: solid 3px #e54861;
+    transition: all 0.25s ease-in-out;
+    color: white;
+    line-height: 15px;
+    text-align: justify; }
+  .category .cat:hover .more {
+    height: 100px;
+    padding: 10px;
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.5), inset 0 20px 15px -15px black; }
+
+footer {
+  height: 100px;
+  margin-top: 50px;
+  width: 100%;
+  background-color: #000; }
+  footer .copy {
+    font-family: consolamono;
+    font-size: 10pt;
+    color: white; }
+  footer .link {
+    width: 50px;
+    height: 50px; }
+  footer .vk {
+    background-color: blue; }
+  footer .tw {
+    background-color: lightblue; }
+  footer .in {
+    background-color: brown; }
+
+/*# sourceMappingURL=catalog.css.map */

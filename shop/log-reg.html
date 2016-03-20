@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/wfg.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/log-reg.css">
+</head>
+<body>
+    <div class="all_page full_height">
+        <!-- Виведення повідомлення зверху
+         <div class="error">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="lg-12 row">
+                        <h3 class="lg-12">Please check your inputs login or password on corrected</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="excelent">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="lg-12 row">
+                        <h3 class="lg-12">All values are good</h3>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="container full_height">
+            <div class="row justify-center items-center full_height">
+                <div class="lg-3 md-4 sm-6 ex-8 row form_login">
+                    <div class="ex_er">
+                        <h4></h4>
+                    </div>
+                    <div class="row items-center full_height">
+                        <div class="lg-12 md-12 sm-12 ex-12 row justify-center logo">
+                            <img src="img/market.svg" width="150" height="150" alt="">
+                        </div>
+                        <div class="lg-12 md-12 sm-12 ex-12 row justify-center title">
+                            <h1>Login</h1>
+                        </div>
+                        <form class="row justify-center items-center form_log" action="" method="post">
+                            <div class="lg-12 md-12 sm-12 ex-12 row inputs">
+                                <input id="log" class="lg-12 md-12 sm-12 ex-12 log required" type="text" placeholder="Login">
+                                <input id="pass" class="lg-12 md-12 sm-12 ex-12 required" type="password" placeholder="Password">
+                            </div>
+                            <div class="lg-12 md-12 sm-12 ex-12 row justify-around sub">
+                                <input class="lg-6 md-6 sm-6 ex-6 submit_button" onclick="cl()" type="button" value="Login">
+                                <a class="lg-6 md-6 sm-6 ex-6 pass" href="">Forgot password?</a>
+                            </div>
+                        </form>
+                        <div class="lg-12 md-12 sm-12 ex-12 row justify-center link_reg">
+                            <p class="lg-11 md-11 sm-11 ex-11">or if you have not account, u also can <b><a href="">create it</a></b> on my website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-2.2.0.js" charset="utf-8"></script>
+<script src="js/jquery.transform2d.js" charset="utf-8"></script>
+<script src="js/jquery.animate-shadow.js" charset="utf-8"></script>
+<script src="js/common.js" charset="utf-8"></script>
+<script type="text/javascript">
+    function cl() {
+        if ($.trim($('input[type=text].required').val()) != '' && $.trim($('input[type=password].required').val()) != '') {
+            $('.ex_er').animate({
+                height:0
+            }, 500);
+            setTimeout(function() {
+                $('.ex_er').css("background","rgb(138, 194, 73)");
+                $('.ex_er').animate({
+                    height:"25px"
+                }, 500);
+                $('.ex_er').children('h4').text('All values are good');
+            }, 500);
+            setTimeout(function() {
+                $('.ex_er').animate({
+                    height:0
+                }, 500);
+            }, 3000);
+            setTimeout(function() {
+                $('.ex_er').children('h4').text('');
+                window.location= "sites.html";
+            }, 3499);
+        }
+        else {
+            $('.ex_er').animate({
+                height:0
+            }, 500);
+            setTimeout(function() {
+                $('.ex_er').css("background","rgb(243, 66, 53)");
+                $('.ex_er').animate({
+                    height:"25px"
+                }, 500);
+                $('.ex_er').children('h4').text('Values not correct');
+            }, 500);
+            setTimeout(function() {
+                $('.ex_er').animate({
+                    height:0
+                }, 500);
+            }, 3000);
+            setTimeout(function() {
+                $('.ex_er').children('h4').text('');
+            }, 3499);
+        }
+    };
+</script>
+</html>
+<!--
+
+
+
+
+VSE TYT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+function cl() {
+    if ($.trim($('input[type=text].required').val()) != '' && $.trim($('input[type=password].required').val()) != '') {
+        $('.error').animate({
+            "margin-top":"-55px"
+        }, 1000);
+        $('.excelent').animate({
+            "margin-top":0
+        }, 1000);
+        setTimeout(function() {
+            $('.excelent').animate({
+                "margin-top":"-55px"
+            }, 1000);
+        }, 3000);
+    }
+    else {
+        $('.excelent').animate({
+            "margin-top":"-55px"
+        }, 1000);
+        $('.error').animate({
+            "margin-top":0
+        }, 1000);
+        setTimeout(function() {
+            $('.error').animate({
+                "margin-top":"-55px"
+            }, 1000);
+        }, 3000);
+    }
+};
+ -->
+<!-- $('.submit_button').click(function() {
+    if (($('.log').val() == '') && ($('.pass').val() == '')) {
+        $('.error').animate({
+            "margin-top":"-55px"
+        }, 1000);
+        $('.excelent').animate({
+            "margin-top":0
+        }, 1000);
+        setTimeout(function() {
+            $('.excelent').animate({
+                "margin-top":"-55px"
+            }, 1000);
+        }, 3000);
+    }
+    else {
+        $('.excelent').animate({
+            "margin-top":"-55px"
+        }, 1000);
+        $('.error').animate({
+            "margin-top":0
+        }, 1000);
+        setTimeout(function() {
+            $('.error').animate({
+                "margin-top":"-55px"
+            }, 1000);
+        }, 3000);
+    };
+}); -->

@@ -1,0 +1,3 @@
+1. Open terminal/console.
+2. Go to appropriate folder with style files.
+3. Enter this command - "sass --watch style.sass:style.css".

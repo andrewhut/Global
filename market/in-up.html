@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/wfg.css">
+    <link rel="stylesheet" href="css/in-up.css">
+    <style media="screen">
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="row justify-around">
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="home.html">New</a></li>
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="catalog.html">Catalog</a></li>
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="about.html">About us</a></li>
+                <li class="lg-3 md-3 sm-3 ex-3"><a href="in-up.html">Sign In/Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="in-up">
+        <div class="container full-height">
+            <div class="row justify-center items-center full-height">
+                <div class="lg-3 md-4 sm-6 ex-10 log-in">
+                    <div class="row">
+                        <div class="lg-12 md-12 sm-12 ex-12 in">
+                            <div class="row justify-end">
+                                <div class="go">
+
+                                </div>
+                                <div class="lg-12 md-12 sm-12 ex-12 title">Sign In</div>
+                                <div class="lg-12 md-12 sm-12 ex-12 inputs">
+                                    <div class="row justify-center full-height">
+                                        <input class="lg-12 md-12 sm-12 ex-12" type="text" placeholder="Login">
+                                        <input class="lg-12 md-12 sm-12 ex-12" type="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="lg-12 md-12 sm-12 ex-12 sub">
+                                    <div class="row justify-center items-center">
+                                        <input class="lg-12 md-12 sm-12 ex-12 log" type="submit" value="Sign In">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg-12 md-12 sm-12 ex-12 up">
+                            <div class="row justify-end">
+                                <div class="go">
+
+                                </div>
+                                <div class="lg-12 md-12 sm-12 ex-12 title">Sign Up</div>
+                                <div class="lg-12 md-12 sm-12 ex-12 inputs">
+                                    <div class="row justify-center full-height">
+                                        <input class="lg-12 md-12 sm-12 ex-12" type="text" placeholder="Login">
+                                        <input class="lg-12 md-12 sm-12 ex-12" type="password" placeholder="Password">
+                                        <input class="lg-12 md-12 sm-12 ex-12" type="password" placeholder="Re-Password">
+                                    </div>
+                                </div>
+                                <div class="lg-12 md-12 sm-12 ex-12 sub">
+                                    <div class="row justify-center items-center">
+                                        <input class="lg-12 md-12 sm-12 ex-12 reg" type="submit" value="Sign Up">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row justify-end">
+                <div class="links">
+                    <div class="row">
+                        <div class="link fb">
+                            <img src="img/facebook.svg" alt="">
+                        </div>
+                        <div class="link tw">
+                            <img src="img/twitter.svg" alt="">
+                        </div>
+                        <div class="link vk">
+                            <img src="img/vk.png" width="50px" height="50px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lg-12 md-12 sm-12 ex-12 copy">
+                    Created by Andrew Hut
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-2.2.0.js" charset="utf-8"></script>
+    <script src="js/jquery.animate-shadow.js" charset="utf-8"></script>
+    <script src="js/jquery.transform2d.js" charset="utf-8"></script>
+    <script src="js/lightTabs.js" charset="utf-8"></script>
+    <script src="js/common.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 1) {
+                $('header').css('background','rgb(255, 255, 255)');
+                $('header').css('border-bottom','solid 1px black');
+            }
+            else if ($(this).scrollTop() < 1) {
+                $('header').css('background','transparent');
+                $('header').css('border-bottom','none');
+            }
+        });
+        var step = true;
+        $('.go').click(function() {
+            if (step == true) {
+                $('.in').animate({
+                    "margin-top": "-250px"
+                }, 500);
+                $('.go').animate({
+                    transform: "rotate(180deg)"
+                }, 250);
+                step = false;
+            }
+            else {
+                $('.in').animate({
+                    "margin-top": 0
+                }, 500);
+                step = true;
+                $('.go').animate({
+                    transform: "rotate(360deg)"
+                }, 250);
+            }
+        });
+    </script>
+</body>
+</html>

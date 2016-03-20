@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="wfg.css">
+    <style>
+.tabbb {
+    display: none;
+    height: 200px;
+}
+.tabbb input {
+    height: 30px;
+}
+#t-1 {
+    display: flex;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.tabs {
+    background: lightblue;
+    padding: 0;
+    margin: 0;
+}
+.tab {
+    height: 50px;
+    border: solid 1px black;
+}
+.inputs {
+    padding: 0;
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-end">
+            <ul class="lg-3 row tabs">
+                <li class="lg-6 row justify-center items-center tab cur"><a href="#t-1">first</a></li>
+                <li class="lg-6 row justify-center items-center tab"><a href="#t-2">second</a></li>
+                <div id="t-1" class="lg-12 row justify-center items-center tabbb">
+                    <div class="lg-12 row inputs">
+                        <input class="lg-12" type="text" name="login" id="" placeholder="Login">
+                        <input class="lg-12" type="passwrod" name="password" id="" placeholder="Password">
+                    </div>
+
+                    <input class="lg-12" type="button" name="log" id="" value="Login">
+                </div>
+                <div id="t-2" class="lg-12 row justify-center items-center tabbb">
+                    <div class="lg-12 row inputs">
+                        <input class="lg-12" type="text" name="login" id="" placeholder="Login">
+                        <input class="lg-12" type="passwrod" name="password" id="" placeholder="Password">
+                        <input class="lg-12" type="passwrod" name="repassword" id="" placeholder="Re-Password">
+                    </div>
+                    <input class="lg-12" type="button" name="log" id="" value="Login">
+                </div>
+            </ul>
+        </div>
+    </div>
+    <script src="jquery-2.2.0.js" charset="utf-8"></script>
+<script>
+$('.row a').click(function(event) {
+    event.preventDefault();
+    $(this).parent().addClass('cur');
+    $(this).parent().siblings().removeClass('cur');
+    var tab = $(this).attr("href");
+    $(".tabbb").not(tab).css("display", "none");
+    $(tab).fadeIn();
+});
+</script>
+</body>
+</html>

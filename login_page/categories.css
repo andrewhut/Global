@@ -1,0 +1,84 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    overflow: hidden;
+
+    background-color: #2c3e50;
+}
+*
+{
+    font-family: anonymouspro;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    color: #e6e7e8;
+}
+@font-face
+{
+    font-family: anonymouspro; /* Имя шрифта */
+
+    src: url(anonymouspro.ttf); /* Путь к файлу со шрифтом */
+}
+.category
+{
+    margin-bottom: 100px;
+}
+.p-m-null
+{
+    margin: 0;
+    padding: 0;
+}
+.full-height
+{
+    height: 100%;
+}
+.load-page
+{
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(225deg, #8b80fc, #cb3958);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .5);
+}
+.page
+{
+    height: 100px;
+
+    transition: all .25s ease-in-out;
+
+    background: linear-gradient(225deg, #8b80fc, #cb3958);
+}
+.page-more
+{
+    height: 0;
+
+    transition: all .25s ease-in-out;
+
+    border-bottom: solid 3px #8b80fc;
+    background-color: #2c3e50;
+}
+.page:hover
+{
+    transform: scale(1.075, 1.075);
+
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .5);
+}
+.page:hover .page-more
+{
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .5);
+}
+.page-more a
+{
+    text-decoration: none;
+
+    opacity: 0;
+}
