@@ -1,117 +1,201 @@
-html, body {
-  width: 100%;
-  height: 100%; }
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-li {
-  text-align: center;
-  list-style: none; }
+li
+{
+    list-style: none;
 
-a {
-  transition: all 0.25s ease-in-out;
-  text-decoration: none;
-  color: black; }
+    text-align: center;
+}
 
-div {
-  text-align: center;
-  text-decoration: none; }
+a
+{
+    transition: all .25s ease-in-out;
+    text-decoration: none;
 
-.full-height {
-  height: 100%; }
+    color: black;
+}
 
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 2; }
-  header a {
-    font-family: consolamono; }
-  header a:hover {
-    color: #F97302; }
+div
+{
+    text-align: center;
+    text-decoration: none;
+}
 
-.banner {
-  width: 100%;
-  height: 500px;
-  background: url("../img/banner.jpg");
-  background-size: cover; }
-  .banner img {
+.full-height
+{
+    height: 100%;
+}
+
+header
+{
+    position: fixed;
+    z-index: 2;
+
+    width: 100%;
+}
+header a
+{
+    font-family: consolamono;
+}
+header a:hover
+{
+    color: #f97302;
+}
+
+.banner
+{
+    width: 100%;
+    height: 500px;
+
+    background: url('../img/banner.jpg');
+    background-size: cover;
+}
+.banner img
+{
     width: 500px;
-    height: 500px; }
-  .banner .title .title {
+    height: 500px;
+}
+.banner .title .title
+{
     font-family: gunplay;
     font-size: 50pt;
     line-height: 128px;
-    margin-left: -35px; }
-  .banner .title .sub-title {
+
+    margin-left: -35px;
+}
+.banner .title .sub-title
+{
     font-family: gunplay;
     font-size: 33pt;
+
+    margin-top: -42px;
     margin-left: 97px;
-    margin-top: -42px; }
+}
 
-.top-new {
-  width: 100%;
-  font-family: consolamono;
-  margin: 0;
-  z-index: 1; }
-  .top-new .top-title {
-    margin: 50px;
+.top-new
+{
+    font-family: consolamono;
+
+    z-index: 1;
+
+    width: 100%;
+    margin: 0;
+}
+.top-new .top-title
+{
+    font-family: gunplay;
     font-size: 20pt;
-    font-family: gunplay; }
-  .top-new .page {
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.25s ease-in-out; }
-    .top-new .page img {
-      display: block;
-      height: 300px;
-      margin-left: -100%; }
-    .top-new .page .open {
-      transition: all 0.25s ease-in-out; }
-    .top-new .page .buy {
-      transition: all 0.25s ease-in-out; }
-    .top-new .page .more {
-      position: absolute;
-      overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.7);
-      height: 0;
-      top: 0;
-      left: 0;
-      border-bottom: solid 3px #F97302;
-      width: 100%;
-      transition: all 0.25s linear; }
-      .top-new .page .more .title {
-        font-size: 16pt;
-        font-family: gunplay; }
-    .top-new .page:hover .more {
-      height: 100%; }
-    .top-new .page a:hover {
-      color: #F97302; }
-    .top-new .page .open:hover {
-      transform: scale(1.5, 1.5); }
-    .top-new .page .buy:hover {
-      transform: scale(1.5, 1.5); }
 
-footer {
-  height: 100px;
-  margin-top: 50px;
-  width: 100%;
-  background-color: #000; }
-  footer .copy {
+    margin: 50px;
+}
+.top-new .page
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 300px;
+    margin: 10px;
+
+    transition: all .25s ease-in-out;
+}
+.top-new .page img
+{
+    display: block;
+
+    height: 300px;
+
+    transform: translateX(-25%);
+}
+.top-new .page .open
+{
+    transition: all .25s ease-in-out;
+}
+.top-new .page .buy
+{
+    transition: all .25s ease-in-out;
+}
+.top-new .page .more
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 0;
+
+    transition: all .25s linear;
+
+    border-bottom: solid 3px #f97302;
+    background-color: rgba(255, 255, 255, .7);
+}
+.top-new .page .more .title
+{
+    font-family: gunplay;
+    font-size: 16pt;
+}
+.top-new .page:hover .more
+{
+    height: 100%;
+}
+.top-new .page a:hover
+{
+    color: #f97302;
+}
+.top-new .page .open:hover
+{
+    transform: scale(1.5, 1.5);
+}
+.top-new .page .buy:hover
+{
+    transform: scale(1.5, 1.5);
+}
+
+footer
+{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+
+    background-color: #000;
+}
+footer .copy
+{
     font-family: consolamono;
     font-size: 10pt;
-    color: white; }
-  footer .link {
+
+    color: white;
+}
+footer .link
+{
     width: 50px;
-    height: 50px; }
-  footer .fb {
-    background-color: #4b6faa; }
-  footer .tw {
-    background-color: #32def4; }
-  footer .vk {
-    background-color: brown; }
+    height: 50px;
+}
+footer .fb
+{
+    background-color: #4b6faa;
+}
+footer .tw
+{
+    background-color: #32def4;
+}
+footer .vk
+{
+    background-color: brown;
+}
 
 /*# sourceMappingURL=home.css.map */
