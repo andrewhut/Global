@@ -1,0 +1,107 @@
+html, body
+    width: 100%
+    height: 100%
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+li
+    text-align: center
+    list-style: none
+a
+    transition: all .25s ease-in-out
+    text-decoration: none
+    color: black
+div
+    text-align: center
+    text-decoration: none
+.full-height
+    height: 100%
+header
+    position: fixed
+    width: 100%
+    z-index: 2
+    & a
+        font-family: consolamono
+    & a:hover
+        color: #F97302
+.banner
+    width: 100%
+    height: 500px
+    background: url("../img/banner.jpg")
+    background-size: cover
+    & img
+        width: 500px
+        height: 500px
+    & .title
+        & .title
+            font-family: gunplay
+            font-size: 50pt
+            line-height: 128px
+            margin-left: -35px
+        & .sub-title
+            font-family: gunplay
+            font-size: 33pt
+            margin-left: 97px
+            margin-top: -42px
+.top-new
+    width: 100%
+    font-family: consolamono
+    margin: 0
+    z-index: 1
+    & .top-title
+        margin: 50px
+        font-size: 20pt
+        font-family: gunplay
+    & .page
+        height: 300px
+        overflow: hidden
+        position: relative
+        transition: all .25s ease-in-out
+        & img
+            display: block
+            height: 300px
+            margin-left: -100%
+        & .open
+            transition: all .25s ease-in-out
+        & .buy
+            transition: all .25s ease-in-out
+        & .more
+            position: absolute
+            overflow: hidden
+            background-color: rgba(255, 255, 255, .7)
+            height: 0
+            top: 0
+            left: 0
+            border-bottom: solid 3px #F97302
+            width: 100%
+            transition: all .25s linear
+            & .title
+                font-size: 16pt
+                font-family: gunplay
+        &:hover .more
+            height: 100%
+        & a:hover
+            color: #F97302
+        & .open:hover
+            transform: scale(1.5, 1.5)
+        & .buy:hover
+            transform: scale(1.5, 1.5)
+footer
+    height: 100px
+    margin-top: 50px
+    width: 100%
+    background-color: #000
+    & .copy
+        font-family: consolamono
+        font-size: 10pt
+        color: white
+    & .link
+        width: 50px
+        height: 50px
+    & .fb
+        background-color: #4b6faa
+    & .tw
+        background-color: #32def4
+    & .vk
+        background-color: brown

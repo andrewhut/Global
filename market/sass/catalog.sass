@@ -1,0 +1,79 @@
+html, body
+    width: 100%
+    height: 100%
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+li
+    text-align: center
+    list-style: none
+a
+    transition: all .25s ease-in-out
+    text-decoration: none
+    color: black
+div
+    text-align: center
+    text-decoration: none
+.full-height
+    height: 100%
+header
+    position: fixed
+    width: 100%
+    border-bottom: 1px solid black
+    & a
+        font-family: consolamono
+    & a:hover
+        color: rgb(229, 72, 97)
+.category
+    & .empty
+        height: 63px
+        line-height: 175px
+        font-family: gunplay
+        font-size: 20pt
+    & .cat
+        height: 50px
+        margin: 75px 30px 75px 30px
+        background-color: rgb(229, 72, 97)
+        text-align: center
+        line-height: 50px
+        transition: all .25s ease-in-out
+        & .title
+            height: 50px
+            & a
+                font-family: consolamono
+                color: rgb(239, 213, 183)
+        &:hover
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, .5)
+            transform: scale(1.1, 1.1)
+        & .more
+            overflow: hidden
+            background-color: rgb(38, 37, 44)
+            height: 0
+            border-bottom: solid 3px rgb(229, 72, 97)
+            transition: all .25s ease-in-out
+            color: white
+            line-height: 15px
+            text-align: justify
+        &:hover .more
+            height: 100px
+            padding: 10px
+            box-shadow: 0 5px 15px 5px rgba(0, 0, 0, .5), inset 0 20px 15px -15px black
+footer
+    height: 100px
+    margin-top: 50px
+    width: 100%
+    background-color: #000
+    & .copy
+        font-family: consolamono
+        font-size: 10pt
+        color: white
+    & .link
+        width: 50px
+        height: 50px
+    & .vk
+        background-color: blue
+    & .tw
+        background-color: lightblue
+    & .in
+        background-color: brown
